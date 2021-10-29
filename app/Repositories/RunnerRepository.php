@@ -21,13 +21,17 @@ class RunnerRepository implements RunnerRepositoryInterface
     {
         return Runner::create([
             'name' => $requestData['name'],
-            'tag' => $requestData['tag'],
-            'category' => $requestData['category'],
-            'image' => $requestData['image'],
-            'thumbnail' => $requestData['thumbnail'] ?? null,
+            'external_id' => $requestData['tag'],
+            'age' => $requestData['category'],
+            'sex' => $requestData['image'],
+            'colour' => $requestData['thumbnail'],
+            'sire' => $requestData['thumbnail'],
+            'dam' => $requestData['thumbnail'] ,
+            'owners' => $requestData['thumbnail'] ,
+            'avatar' => $requestData['thumbnail'] ,
+            'race_id' => $requestData['thumbnail'] ,
         ]);
     }
-
     public function update($data)
     {
         $data->save();
