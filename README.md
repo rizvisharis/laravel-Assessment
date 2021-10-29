@@ -22,6 +22,8 @@ Install project with composer
 
 **mysql/maria db**
 
+**php/redis**
+
 
 
 
